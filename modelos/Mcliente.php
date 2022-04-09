@@ -128,7 +128,7 @@ WHERE
                 $this->db->query($sql_editar);
                 return 1;
             } else if ($res_query->num_rows > 0) {
-                return 'Los datos ya han sido registrados.' . $sql_query;
+                return 'La informacion proporcionada ya esta siendo usada por otro cliente.' /* . $sql_query */;
             } else {
                 return 'Ocurrio un error al editar.';
             }
